@@ -1,0 +1,1 @@
+[1] - Dobro\n [2]- Triplo\n [3] - Quadrado\n [4] - Metade
