@@ -11,7 +11,10 @@ def multiplicar(a, b):
     return n
 
 def dividir(a, b):
-    n = a / b
+    if b != 0:
+        n = a / b
+    else:
+        n = 0
     return n
 
 
@@ -24,15 +27,19 @@ opcao = float(input('Informe a operação desejada: '))
 match opcao:
     case 1:
         resposta = somar(n1, n2)
+        print (f'O resultado da operação é {resposta}')
     case 2:
         resposta = subtrair(n1, n2)
+        print (f'O resultado da operação é {resposta}')
     case 3:
         resposta = multiplicar(n1, n2)
+        print (f'O resultado da operação é {resposta}')
     case 4:
         resposta = dividir(n1, n2)
+        print (f'O resultado da operação é {resposta}')
     case _:
         resposta = print("Opção inválida!!")
     
-print (f'O resultado da operação é {resposta}')
+
     
 
