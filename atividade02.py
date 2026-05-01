@@ -1,28 +1,8 @@
+from auxiliar.operacoes_basicas import somar, subtrair, multiplicar, dividir
 import random
 import os
 
-def somar(a, b):
-    n = a + b
-    return n
-
-def subtrair(a, b):
-    n = a - b
-    return n
-
-def multiplicar(a, b):
-    n = a * b
-    return n
-
-def dividir(a, b):
-    if b != 0:
-        n = a / b
-    else:
-        n = 0
-    return n
-
-
 #Início
-os.
 n1 = random.randint (1, 10)
 n2 = random.randint (1, 10)
 print(f'\n Os números escolhidos foram {n1} e {n2}\n')
@@ -43,7 +23,3 @@ match opcao:
         print (f'O resultado da operação é {resposta}')
     case _:
         resposta = print("Opção inválida!!")
-    
-
-    
-
